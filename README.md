@@ -8,7 +8,7 @@
 - *Solicitaremos de nuestro proyecto calcular el producto mas vendido segun nuestro catalogo de Make Up.*
 - *Para mantener la simplicidad del proyecto no se contemplan manejar persistencia en el almacenamiento de los datos.*
 - *No se realiza validacion, ni se verifica calidad en los datos registrados.*
-
+ 
  
 ## ***Analisis del ejercicio:***
 
