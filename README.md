@@ -12,6 +12,8 @@
 
 ![image](https://github.com/danidozapata/ejercicio11.github.io/assets/132966451/6fe31925-b998-4baa-a490-b255176ff611)
 
-## ***Aproximacion de casos de uso:***
+## ***Aproximacion casos de uso:***
 
 ![image](https://github.com/danidozapata/ejercicio11.github.io/assets/132966451/eba73ae4-0897-4904-b835-40eef4ebd0db)
+
+## ***Aproximacion diagrama de flujo:***
