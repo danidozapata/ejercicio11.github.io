@@ -30,76 +30,63 @@
 ## ***Aproximacion Seudocodigo:***
 
 
-var Paleta_Sombras = 0
+vint paletaSombras = 0;
+        int base = 0;
+        int brillo = 0;
+        int primer = 0;
+        int rubor = 0;
+        int iluminador = 0;
+        int comprar = 0;
 
-var Base = 0
+        System.out.print("Digite su Nombre: ");
+        String nombre = scanner.nextLine();
 
-var Brillo = 0
+        System.out.print("Digite su Identificacion: ");
+        String identificacion = scanner.nextLine();
 
-var Primer = 0
+        do {
+            System.out.println("Digite la opcion que desea comprar:");
+            System.out.println("1. Paleta de Sombras");
+            System.out.println("2. Base");
+            System.out.println("3. Brillo");
+            System.out.println("4. Primer");
+            System.out.println("5. Rubor");
+            System.out.println("6. Iluminador");
 
-var Rubor = 0
+            int opcion = scanner.nextInt();
 
-var Iluminador = 0
+            if (opcion == 1) {
+                paletaSombras++;
+            } else if (opcion == 2) {
+                base++;
+            } else if (opcion == 3) {
+                brillo++;
+            } else if (opcion == 4) {
+                primer++;
+            } else if (opcion == 5) {
+                rubor++;
+            } else if (opcion == 6) {
+                iluminador++;
+            }
 
-var comprar = 0
+            System.out.println("Quieres seguir comprando?");
+            System.out.println("1. Si");
+            System.out.println("0. No");
+            comprar = scanner.nextInt();
+        } while (comprar == 1);
 
-var nombre = prompt("Digite su Nombre = ")
-
-var identificacion = prompt("Digite su Identificacion = ")
-
-do{
-    var opciones = prompt("Digite la opcion que desea comprar = \n 1.Paleta_Sombras \n 2.Base \n 3.Brillo \n 4.Primer \n 5.Rubor \n 6.Iluminador")
-   
-    if(opciones == 1){
-        Paleta_Sombras = Paleta_Sombras + 1
-        
-    }if(opciones == 2){
-        Base = Base + 1
-        
-    }if(opciones == 3){
-        Brillo = Brillo + 1
-        
-    }if(opciones == 4){
-        Primer = Primer + 1}
-
-    if(opciones == 5){
-            Rubor = Rubor + 1}
-
-    if(opciones == 6){
-            Iluminador = Iluminador + 1}
-
-    comprar = prompt("Quieres seguir comprando? \n 1.Si \n 0.No ")
-
-    if(comprar == 0){
-
-        if(Paleta_Sombras > Base && Paleta_Sombras > Brillo && Paleta_Sombras > Primer && Paleta_Sombras > Rubor && Paleta_Sombras > Iluminador )
-        {
-           
-                alert("Sombras es el producto mas vendido = " + Paleta_Sombras)
-           
-        }
-        else if(Base > Paleta_Sombras && Base > Brillo && Base > Primer && Base > Rubor && Base > Iluminador)
-        {
-            alert("Bases es el producto mas vendido = " +  Base)
-
-        }
-        else if(Brillo > Paleta_Sombras && Brillo> Base && Brillo> Primer && Brillo> Rubor && Brillo> Iluminador){
-            alert("Brillos es el producto mas vendido = " + Brillo)
-
-        }
-        else if(Primer > Paleta_Sombras && Primer> Base && Primer> Brillo && Primer> Rubor && Primer> Iluminador){
-            alert("Primer es el producto mas vendido = " + Primer)
-
-        }
-        else if(Rubor > Paleta_Sombras && Rubor> Base && Rubor> Brillo && Rubor> Primer && Rubor> Iluminador){
-            alert("Rubor es el producto mas vendido = " + Rubor)
-
-        }
-        else if(Iluminador > Paleta_Sombras && Iluminador> Base && Iluminador> Brillo && Iluminador> Rubor && Iluminador> Primer){
-            alert("Iluminador es el producto mas vendido = " + Iluminador)
+        if (paletaSombras > base && paletaSombras > brillo && paletaSombras > primer && paletaSombras > rubor && paletaSombras > iluminador) {
+            System.out.println("La paleta de sombras es el producto más vendido con " + paletaSombras + " unidades.");
+        } else if (base > paletaSombras && base > brillo && base > primer && base > rubor && base > iluminador) {
+            System.out.println("La base es el producto más vendido con " + base + " unidades.");
+        } else if (brillo > paletaSombras && brillo > base && brillo > primer && brillo > rubor && brillo > iluminador) {
+            System.out.println("El brillo es el producto más vendido con " + brillo + " unidades.");
+        } else if (primer > paletaSombras && primer > base && primer > brillo && primer > rubor && primer > iluminador) {
+            System.out.println("El primer es el producto más vendido con " + primer + " unidades.");
+        } else if (rubor > paletaSombras && rubor > base && rubor > brillo && rubor > primer && rubor > iluminador) {
+            System.out.println("El rubor es el producto más vendido con " + rubor + " unidades.");
+        } else if (iluminador > paletaSombras && iluminador > base && iluminador > brillo && iluminador > primer && iluminador > rubor) {
+            System.out.println("El iluminador es el producto más vendido con " + iluminador + " unidades.");
         }
     }
-
-}while(comprar == 1 )
-
+}
